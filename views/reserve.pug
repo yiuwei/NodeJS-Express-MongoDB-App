@@ -1,0 +1,28 @@
+extends outline
+
+block content
+
+  include profile
+  //- Create a reservation form to let customers book tables
+  form(method='POST', action="/profile" enctype="multipart/form-data")
+    h4 Make a Reservation 
+    div
+    label(for='name')  Name :  
+      input(type='text', name='name' placeholder='Name', required)
+    br
+    div
+    label(for="time")  Time : 
+      input(type="time" id="time" name="time" required)
+    br
+    div
+    label(for='date') Date :
+      input(type='date', name='date', placeholder= "dDte", required)
+    br
+    div
+    label(for='guest') Guest :
+      input(type='number', name='guest', placeholder= "Guest", required)
+    br
+    .profile-group
+      label(for="imagefile") Photo:
+      input(type="file" name="imagefile" placeholder="Filename")
+    button(type='submit') Reservation

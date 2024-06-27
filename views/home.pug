@@ -1,0 +1,50 @@
+extends outline
+
+block content
+  //- Create a homepage for the restaurant
+  body
+    header 
+      h5 A Celebration of Taste 
+    main
+      section
+        .slide-container
+          .slides
+            img(src='/static/images/photo1.jpg')
+            h4 California Roll Sushi - $10.00
+          .slides
+            img(src='/static/images/photo2.jpg')
+            h4 Tortilla Chips - $12.00
+          .slides
+            img(src='/static/images/photo3.jpg')
+            h4 Caprese Salad - $15.99
+          .slides
+            img(src='/static/images/photo4.jpg')
+            h4 Hawaiian Pizza - $18.99
+          //- Next and previous slides
+          a.prev(onclick='next(-1)') &#10094; Previous
+          a.next(onclick='next(1)') Next &#10095;
+        
+    //- Use Javascript to create slideshow
+    script.
+      let index = 0; 
+      let slides = document.getElementsByClassName("slides");
+
+      function next(n) {
+        currentSlide(index += n);
+      }
+
+      function currentSlide(n) {
+        if (n >= slides.length) { index = 0; }
+        if (n < 0) { index = slides.length - 1; }
+        
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        } 
+        slides[index].style.display = "block";
+      }
+      currentSlide(index);
+
+    //- Create a footer
+    footer 
+      p The Modern Cuisine &#174; Registered Trademark of Food Corporation
+  

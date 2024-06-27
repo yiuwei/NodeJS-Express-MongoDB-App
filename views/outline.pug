@@ -1,0 +1,22 @@
+html 
+  head 
+    title= title 
+    //- Link bootstrap and stylesheet to outline page
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel='stylesheet', href='/static/styles/style.css'>
+    body 
+    //- Create a navigation bar and header link
+    h2 The Modern Cuisine 
+    nav 
+      ul 
+        li 
+          a(href='/') Home
+        li 
+          a(href='/menus') Menus
+        li
+          a(href='/specials') Specials 
+        li 
+         a(href='/locations') Locations
+        li
+         a(href='/profile') Reservations
+    block content

@@ -1,0 +1,32 @@
+extends outline
+
+block content
+      br
+      .items
+        img(src=data.imageurl, width='400' height='280' style="display: block; margin: 0 auto;")
+        h5 DAILY SPECIALS
+          | → UPDATE YOUR RESERVATION
+    
+      //- Update and delete table reservation
+      form(method='POST', action="/profile/"+ data._id)
+        br
+        div
+        label(for='name') Name:
+          input(type='text', value=data.name name='name')
+        div
+          label(for='time') Time:
+          input(type='time', value=data.time name='time')
+        div
+          label(for='date') Date:
+          input(type='text', value=data.date name='date')
+        div
+          label(for='guest') Guest:
+          input(type='number', value=data.guest name='guest')
+        div
+          input(type='hidden', name='_id' value=data._id)
+        br
+        div
+          button(class="update", type='submit' name='action' value='update') UPDATE
+          br
+          button(class="delete", type='submit' name='action' value='delete') DELETE
+      

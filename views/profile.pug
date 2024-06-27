@@ -1,0 +1,11 @@
+//- Showcase a list of reservation
+h5 Booked Tables
+.row
+  .col-md-6.col-md-offset-3.restos-container
+    form(action="/your-action-url" method="get") 
+      select(name="reservation" id="restos"  onchange="location = this.value;")
+        option(value="") Select a reservation
+        each data in cuisine
+          option(value=`/profile/${data._id}`) Reservation for #{data.name} for #{data.guest} on #{data.date}
+
+  

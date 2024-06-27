@@ -1,0 +1,20 @@
+extends outline
+
+block content
+    //- Create a list of weekly specials
+    h1 Weekly Specials
+    br
+    body
+    //- Loop through the items and create resources
+    each data in restaurant
+      .menus
+        img(src=data.image alt=data.title width='350' height='250')
+        .details
+          p(class="name")= data.name
+          p(style='margin-bottom: 0px;') Specials: #{data.special}
+          p Descriptions: #{data.description}
+          p(class="price") Price: #{data.price}
+    //- Create a footer 
+    footer 
+      p The Modern Cuisine &#174; Registered Trademark of Food Corporation
+
