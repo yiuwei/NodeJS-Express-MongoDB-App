@@ -1,0 +1,311 @@
+/**
+ * Global Styles
+ */
+
+/* Body */
+body {
+  background-color: white;
+  font-family: Georgia, sans-serif;
+  font-style: normal;
+}
+
+a {
+  color: white;
+  border-radius: 48%;
+} 
+
+/* Navbar */
+nav { 
+  background-color: rgb(62, 178, 113);
+  color: rgb(245, 231, 233);
+  overflow: scroll;
+  padding: 8px 0;
+}
+
+ul { 
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Link */
+li { 
+  font-family: Georgia, sans-serif;
+  font-size: 20px;
+  float: left;
+  margin: 0 15px;
+  position: relative;
+}
+
+li a { 
+  color: white;
+  display: block;
+  padding: 6px 8px;
+}
+
+/* Header */
+h1{
+  font-size: 30px;
+  margin:6x;
+  margin-top: 5px;
+  padding: 8px;
+  text-align: center;
+}
+
+h2{ 
+  background-color: seagreen;
+  color: white;
+  font-size: 45px;
+  font-weight: 650;
+  font-family: fantasy;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 40px;
+  text-align: center;
+}
+
+h3{
+  font-size: 25px;
+  font-family: fantasy;
+  margin-left: 0px;
+  text-align: left;
+} 
+
+h4{
+  font-size: 25px;
+  text-align: center;
+  font-family: fantasy;
+}
+
+h5{ 
+  color: seagreen;
+  font-size: 35px;
+  font-weight: 800;
+  font-family: fantasy;
+  margin-top: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: seagreen;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 8px 0;
+  text-align: center; 
+}
+
+/* Form */
+form {
+  background-color: transparent;
+  border-color: ghostwhite;
+  border-radius: 1px;
+  color-scheme: white;
+  margin: 18px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+label {
+  color: seagreen;
+  font-size: 18px;
+  font-family: fantasy;
+  font-weight: 800;
+  margin-top: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+input {
+  border-radius: 2px;
+  font-size: 16px; 
+  margin-left: 0; 
+  padding: 8px;
+  text-align: left; 
+  width: 320px;
+}
+
+button {
+  background-color: seagreen;
+  border-radius: 2px; 
+  color:white;
+  cursor: pointer;
+  font-size: 18px; 
+  margin-left: 15px;
+  padding: 8px 80px;
+}
+
+/**
+ * Class Style
+ */
+
+ /* Buttons */
+.update {
+  background-color: seagreen;
+  border-radius: 3px; 
+  color:white;
+  cursor: pointer;
+  font-size: 13px; 
+  font-family: Georgia, serif;
+  margin-left: 35px;
+  padding: 8px 115px;
+}
+
+.delete {
+  background-color: #e7132ce3; 
+  border-radius: 1px; 
+  color:white;
+  cursor: pointer;
+  font-size: 13px; 
+  font-family: Georgia, serif;
+  margin-left: 35px;
+  padding: 8px 115px;
+}
+
+/* Details */
+.name {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.menus{
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 50px;
+  margin-right: 70px;
+  margin-bottom: 15px;
+}
+
+.title {
+  max-width: 350px;
+  max-height: 750px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.details { 
+  margin-left: 30px; 
+}
+
+.price {
+  font-size: 30px;
+}
+
+/* Webpages */
+.slide-container {
+  max-width: 620px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: none;
+}
+
+.slides img {
+  background-color: rgb(102, 172, 132);
+  height: 390; 
+  padding-bottom: 20px;
+  width: 620; 
+}
+
+/* Slides */
+.prev, .next {
+  background-color: rgb(6, 6, 6);
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  top: 40%;
+  padding: 15px;
+  text-decoration: none;
+  user-select: none;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgb(6, 6, 6);
+}
+
+/* Menus */
+.menu-section {
+  margin-bottom: 30px;
+}
+.menu-item {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(10, 9, 9, 0.1);
+  display: inline-block;
+  margin: 3px 1%;
+  margin-inline-start: 20px;
+  margin-inline-end: 10px;
+  padding: 20px;
+  text-align: left; 
+  vertical-align: top; 
+  width: 45%; 
+  
+}
+.menu-item img {
+  display: block;
+  height: 300px;
+  margin-bottom: 10px; 
+  max-width: 100%;
+}
+
+/* Reservations */
+.profile-group {
+  align-items: center;
+  display: flex;
+}
+.profile-group label {
+  margin-left: 310px;
+}
+
+.profile-group input{
+  color: seagreen;
+  margin-left: 5px;
+}
+
+#restos {
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  color: seagreen;
+  font-size: 16px;
+  padding: 3px;
+  text-align: center;
+  width: 100%;
+}
+
+#restos option {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.restos-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 10vh; 
+}
