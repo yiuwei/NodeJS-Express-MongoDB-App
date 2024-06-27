@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+// Module dependencies
+const app = require('../app');
+const http = require('http');
+
+// Define port and ceate an HTTP server
+const server = http.createServer(app);
+
+// Listen to incoming port
+server.listen(8080, () => {
+   console.log(`Listening to port`);
+});
